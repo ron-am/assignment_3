@@ -3,7 +3,7 @@
 ## Your Implementation
 Please create a local copy of this template Colab's Notebook:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1FfXDvRMALIsd-IzPdf_Fn92OLVHjSY9I#scrollTo=3-7FX8tW0y7k)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VVtBtlwZZnxQWdluNVkDgTMvDKVaqDOM?usp=sharing)
 
 The assignment's instructions are there; you can just follow the notebook.
 
@@ -25,7 +25,7 @@ This assignment uses an autograding system that may seem a bit different. Keep t
 ## Submission
 - **Notebook Link**: In the `notebook_link.txt` file, add the URL to your assignment's notebook, following the format provided in the example.
 - **Access**: Ensure the link has edit permissions enabled to allow modifications if needed.
-- **Deadline**: <font color='green'>21/05/2024, 23:55</font>.
+- **Deadline**: <font color='green'>06/06/2024, 23:55</font>.
 - **Platform**: Continue using GitHub for submissions. 
 
 ## General instructions
