@@ -18,7 +18,7 @@
       "output": "1",
       "comparison": "exact",
       "timeout": 10,
-      "points": 5
+      "points": 10
     },
     {
       "name": "test_count_oov",
@@ -28,7 +28,7 @@
       "output": "1",
       "comparison": "exact",
       "timeout": 10,
-      "points": 5
+      "points": 10
     },
     {
       "name": "test_prepare_data_loader",
@@ -38,7 +38,7 @@
       "output": "1",
       "comparison": "exact",
       "timeout": 10,
-      "points": 5
+      "points": 10
     },
     {
       "name": "test_NERNet",
@@ -48,7 +48,7 @@
       "output": "2",
       "comparison": "exact",
       "timeout": 10,
-      "points": 10
+      "points": 20
     },
     {
       "name": "test_NERNet",
@@ -58,7 +58,7 @@
       "output": "1",
       "comparison": "exact",
       "timeout": 10,
-      "points": 20
+      "points": 40
     },
     {
       "name": "test_glove",
@@ -68,7 +68,7 @@
       "output": "2",
       "comparison": "exact",
       "timeout": 10,
-      "points": 10
+      "points": 15
     },
     {
       "name": "test_glove",
