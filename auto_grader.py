@@ -50,9 +50,9 @@ def test_NERNet(results):
         return f"F1 without O is {f1_wo_o}, expected at least 0.60"
     
     # Values to partially pass
-    if f1 < 0.86:
+    if f1 < 0.88:
         return 2
-    if f1_wo_o < 0.65:
+    if f1_wo_o < 0.66:
         return 2
 
     # Pass with full marks
