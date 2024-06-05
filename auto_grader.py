@@ -12,7 +12,7 @@ def get_args():
     return parser.parse_args()
 
 def test_read_data(results):
-    lengths = results["lengths"]
+    lengths = tuple(results["lengths"])
 
     if not lengths == (1750, 250, 500):
         return f"Lengths are {lengths}, expected (1750, 250, 500)"
