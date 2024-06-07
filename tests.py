@@ -45,8 +45,9 @@ def test_NERNet():
     n_layers = best_model_cfg['n_layers']
     directions = best_model_cfg['directions']
 
+
     # Create model
-    best_model = NERNet(vocab.n_words, embedding_size=300, hidden_size=hidden_size, n_layers=n_layers, directions=directions)
+    best_model = NERNet(vocab.n_words, embedding_size=300, hidden_size=hidden_size, output_size=vocab.n_tags, n_layers=n_layers, directions=directions)
     best_model.to(DEVICE)
 
     # Train model and evaluate
