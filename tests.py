@@ -45,13 +45,14 @@ def test_NERNet():
     n_layers = best_model_cfg['n_layers']
     directions = best_model_cfg['directions']
 
+
     # Create model
-    best_model = NERNet(vocab.n_words, embedding_size=300, hidden_size=hidden_size, n_layers=n_layers, directions=directions)
+    best_model = NERNet(vocab.n_words, embedding_size=300, hidden_size=hidden_size, output_size=vocab.n_tags, n_layers=n_layers, directions=directions)
     best_model.to(DEVICE)
 
     # Train model and evaluate
-    _ = train_loop(model, n_epochs=10, dataloader_train=dl_train, dataloader_dev=dl_dev)
-    results = evaluate(model, title="", dataloader=dl_test, vocab=vocab)
+    _ = train_loop(best_model, n_epochs=10, dataloader_train=dl_train, dataloader_dev=dl_dev)
+    results = evaluate(best_model, title="", dataloader=dl_test, vocab=vocab)
 
     return {
         'f1': results['F1'],
@@ -74,8 +75,8 @@ def test_glove():
     initialize_from_pretrained_emb(ner_glove, emb_matrix)
 
     # Train model and evaluate
-    _ = train_loop(model, n_epochs=10, dataloader_train=dl_train, dataloader_dev=dl_dev)
-    results = evaluate(model, title="", dataloader=dl_test, vocab=vocab)
+    _ = train_loop(best_model, n_epochs=10, dataloader_train=dl_train, dataloader_dev=dl_dev)
+    results = evaluate(best_model, title="", dataloader=dl_test, vocab=vocab)
 
     return {
         'f1': results['F1'],
